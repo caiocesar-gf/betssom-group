@@ -1,3 +1,5 @@
+package com.betsson.interviewtest.ui.fragment
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -5,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.betsson.interviewtest.BetViewModel
-import com.betsson.interviewtest.ItemAdapter
 import com.betsson.interviewtest.databinding.FragmentBetListBinding
+import com.betsson.interviewtest.ui.viewmodel.BetViewModel
+import com.betsson.interviewtest.ui.adapter.ItemAdapter
 
 class BetListFragment : Fragment() {
 

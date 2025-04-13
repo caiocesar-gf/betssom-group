@@ -1,4 +1,4 @@
-package com.betsson.interviewtest
+package com.betsson.interviewtest.data.model
 
 data class Bet(
     var type: String,

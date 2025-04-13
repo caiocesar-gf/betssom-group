@@ -1,11 +1,10 @@
-package com.betsson.interviewtest
+package com.betsson.interviewtest.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.betsson.interviewtest.R
 import com.betsson.interviewtest.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

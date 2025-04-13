@@ -1,6 +1,8 @@
 package com.betsson.interviewtest
 
-import BetRepositoryImpl
+import com.betsson.interviewtest.data.repository.BetRepository
+import com.betsson.interviewtest.data.repository.BetRepositoryImpl
+import com.betsson.interviewtest.ui.viewmodel.BetViewModel
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

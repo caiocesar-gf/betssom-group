@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/betListFragment"
-        android:name="BetListFragment"
+        android:name="com.betsson.interviewtest.ui.fragment.BetListFragment"
         android:label="Bets"
         tools:layout="@layout/fragment_bet_list" />
 </navigation>

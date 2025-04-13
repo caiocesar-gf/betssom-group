@@ -1,11 +1,11 @@
-package com.betsson.interviewtest
+package com.betsson.interviewtest.ui.adapter
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.betsson.interviewtest.data.model.Bet
 import com.betsson.interviewtest.databinding.ListItemBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource

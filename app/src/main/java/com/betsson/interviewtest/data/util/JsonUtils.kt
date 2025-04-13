@@ -1,4 +1,4 @@
-package com.betsson.interviewtest
+package com.betsson.interviewtest.data.util
 
 import android.content.Context
 

@@ -1,8 +1,10 @@
-package com.betsson.interviewtest
+package com.betsson.interviewtest.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.betsson.interviewtest.data.model.Bet
+import com.betsson.interviewtest.data.repository.BetRepository
 
 class BetViewModel(private val repository: BetRepository) : ViewModel() {
 

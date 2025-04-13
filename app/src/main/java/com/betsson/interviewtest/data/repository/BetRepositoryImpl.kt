@@ -1,5 +1,6 @@
-import com.betsson.interviewtest.Bet
-import com.betsson.interviewtest.BetRepository
+package com.betsson.interviewtest.data.repository
+
+import com.betsson.interviewtest.data.model.Bet
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
