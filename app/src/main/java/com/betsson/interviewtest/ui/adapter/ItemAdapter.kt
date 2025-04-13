@@ -16,7 +16,7 @@ import com.bumptech.glide.request.target.Target
 class ItemAdapter(private var bets: List<Bet>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     fun updateList(newList: List<Bet>) {
-        bets = newList
+        bets = newList.sortedByDescending { it.sellIn }
         notifyDataSetChanged()
     }
 
