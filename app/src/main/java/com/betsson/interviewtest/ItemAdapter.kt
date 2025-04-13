@@ -1,10 +1,17 @@
 package com.betsson.interviewtest
 
+import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.betsson.interviewtest.databinding.ListItemBinding
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.Target
 
 class ItemAdapter(private var bets: List<Bet>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
@@ -29,7 +36,34 @@ class ItemAdapter(private var bets: List<Bet>) : RecyclerView.Adapter<ItemAdapte
             binding.oddName.text = bet.type
             binding.oddSellIn.text = "Sell in: ${bet.sellIn}"
             binding.oddValue.text = "Odds: ${bet.odds}"
-            Glide.with(binding.oddImage.context).load(bet.image).into(binding.oddImage)
+
+            binding.imageProgress.visibility = View.VISIBLE
+
+            Glide.with(binding.oddImage.context)
+                .load(bet.image)
+                .listener(object : RequestListener<Drawable> {
+                    override fun onResourceReady(
+                        resource: Drawable,
+                        model: Any,
+                        target: Target<Drawable>?,
+                        dataSource: DataSource,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        binding.imageProgress.visibility = View.GONE
+                        return false
+                    }
+
+                    override fun onLoadFailed(
+                        e: GlideException?,
+                        model: Any?,
+                        target: Target<Drawable>,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        binding.imageProgress.visibility = View.GONE
+                        return false
+                    }
+                })
+                .into(binding.oddImage)
         }
     }
 }
