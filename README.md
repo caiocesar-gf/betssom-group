@@ -32,8 +32,6 @@ This project is a complete refactoring of a legacy app that calculates the real-
 | **RecyclerView**     | Efficient display of scrollable lists                                      |
 | **JSON + Gson**      | Simulated API-like data source                                             |
 | **JUnit**            | Unit testing for ViewModel and dependency injection                        |
-| **Mockk** (optional) | Can be used for mocking dependencies if needed                            |
-
 ---
 
 ## 🔧 Project Structure
@@ -61,12 +59,6 @@ com.betsson.interviewtest
 - Injection of `BetViewModel` using Koin
 - Loading and parsing data from mocked JSON
 - Validation of initial list (`size == 6`, expected names)
-
----
-
-## 📸 Visual Result
-
-> List showing image, name, odds, and sell-in + buttons for updating/resetting odds with loading indicator.
 
 ---
 
